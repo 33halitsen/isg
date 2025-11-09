@@ -8,7 +8,7 @@ let selectedLanguage = "tr-TR";
 let speechSpeed = 1;
 
 document.addEventListener("DOMContentLoaded", async () => {
-  let choice = prompt("Hangi veri dosyası yüklensin? (1 = İSG 1, 2 = İSG 2, 3 = eksiltilmiş sorular)", "1");
+  let choice = prompt("Hangi veri dosyası yüklensin? (1 = İSG 1, 2 = İSG 2, 3 = eksiltilmiş sorular)", "3");
 
   if (choice === "1") selectedFile = "isg.txt";
   else if (choice === "2") selectedFile = "isg2.txt";
@@ -293,4 +293,5 @@ function initNormalOrder() {
     shuffledQuestions = [...questions].sort((a, b) => a.number - b.number);
     currentQuestionIndex = 0;
   }
+
 }
