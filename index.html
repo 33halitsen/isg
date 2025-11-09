@@ -1,0 +1,67 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isg hayratı</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1217.0" data-gr-ext-installed="">
+    <div class="quiz-container">
+      <div id="viewedQuestionsCount" style="margin-top: 10px; font-weight: bold;">
+      
+      </div>
+      
+      <div class="question-number-container">
+        <button class="toggle-settings-btn" onclick="toggleSettings()">⚙️ Ayarları Göster/Gizle</button>
+        
+        <div id="settingsPanel" class="settings-panel">
+          <label for="questionNumber">Soru Numarası:</label>
+          <input type="number" id="questionNumber" min="1">
+          <button onclick="goToQuestionByNumber()">Git</button>
+      
+          <div class="show-answer-container">
+            <input type="checkbox" id="showAnswerCheckbox" onchange="toggleShowAnswer()">
+            <label for="showAnswerCheckbox">Doğru cevabı her zaman göster</label>
+          </div>
+      
+          <div class="speech-settings">
+            <label for="languageSelect">Dil:</label>
+            <select id="languageSelect" onchange="setLanguage(this.value)">
+              <option value="tr-TR" selected>Türkçe</option>
+              <option value="en-US">İngilizce</option>
+            </select>
+      
+            <label for="speedRange">Hız:</label>
+            <input type="range" id="speedRange" min="0.5" max="3" step="0.1" value="1" onchange="setSpeed(this.value)">
+            <span id="speedValue">1</span>
+          </div>
+      
+          <div class="shuffle-container">
+            <label for="shuffleStart">Başlangıç:</label>
+            <input type="number" id="shuffleStart" min="1">
+            <label for="shuffleEnd">Bitiş:</label>
+            <input type="number" id="shuffleEnd" min="1">
+            <button class="shuffle-btn" onclick="handleShuffle()">Karıştır</button>
+          </div>
+        </div>
+      </div>
+      
+      <div id="question-container" class="question-container">
+        <h2 id="question">1. Yapı işlerinde çalışan işçiler hangi eğitimi almış olmalıdır?</h2>
+        <button class="choice" onclick="checkAnswer(this)">a. İlköğrenim</button>
+        <button class="choice" onclick="checkAnswer(this)">b. Yüksek okul</button>
+        <button class="choice" onclick="checkAnswer(this)">c. Okuryazar</button>
+        <button class="choice" onclick="checkAnswer(this)">d. Mesleki eğitim</button>
+        <button class="navigation-btn" onclick="previousQuestion()">
+          Önceki Soru
+        </button>
+        <button class="navigation-btn" onclick="nextQuestion()">
+          Sonraki Soru
+        </button>
+        <button class="speak-btn" onclick="readAllQuestions()">Sesli Oku ve Geç</button>
+        <button class="stop-btn" onclick="stopReading()">Sesi Durdur</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  
+
+<div id="veepn-guard-alert"></div><style>@font-face{font-family:FigtreeVF;src:url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2 supports variations"),url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2-variations");font-weight:100 1000;font-display:swap}</style><div id="veepn-breach-alert"></div><style>@font-face{font-family:FigtreeVF;src:url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2 supports variations"),url(chrome-extension://majdfhpaihoncoakbjgbdhglocklcgno/fonts/FigtreeVF.woff2) format("woff2-variations");font-weight:100 1000;font-display:swap}</style></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html
